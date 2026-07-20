@@ -15,7 +15,7 @@ html{
 body{
     font-family:'Poppins',sans-serif;
     overflow-x:hidden;
-    background:#f8f9ff;
+    background:#F8F3F4;
     color:#333;
 }
 
@@ -28,12 +28,12 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background:#9dcfff;
+    background:#9E3A52;
     border-radius:20px;
 }
 
 ::-webkit-scrollbar-track{
-    background:#f4f6ff;
+    background:#F8F3F4;
 }
 
 /* =========================
@@ -61,10 +61,11 @@ body{
 
     border-radius:12px;
 
-    background:linear-gradient(
+    background:
+    linear-gradient(
     135deg,
-    #89CFF0,
-    #FFC1E3
+    #7A2238,
+    #C76B84
     );
 
     animation:spin 2s linear infinite;
@@ -98,9 +99,9 @@ body{
     background:
     linear-gradient(
     135deg,
-    #89CFF0,
-    #A7D8FF,
-    #FFC1E3
+    #5C1D2E,
+    #7A2238,
+    #9E3A52
     );
 }
 
@@ -109,7 +110,7 @@ body{
     width:100%;
     max-width:420px;
 
-    background:rgba(255,255,255,.9);
+    background:rgba(255,255,255,.92);
 
     backdrop-filter:blur(15px);
 
@@ -130,6 +131,7 @@ body{
 .pin-card h2{
     margin-top:10px;
     font-size:1.5rem;
+    color:#5C1D2E;
 }
 
 .pin-card p{
@@ -156,7 +158,7 @@ body{
 
     font-size:1.1rem;
 
-    background:#f3f6ff;
+    background:#F7F0F2;
 }
 
 #unlockBtn{
@@ -175,19 +177,19 @@ body{
 
     font-weight:600;
 
+    color:white;
+
     background:
     linear-gradient(
     135deg,
-    #89CFF0,
-    #FFC1E3
+    #7A2238,
+    #C76B84
     );
-
-    color:white;
 }
 
 #pinError{
     margin-top:10px;
-    color:#ff5c8d;
+    color:#B22222;
     font-size:.9rem;
 }
 
@@ -220,9 +222,9 @@ body{
     background:
     linear-gradient(
     180deg,
-    #89CFF0,
-    #A7D8FF,
-    #FFC1E3
+    #5C1D2E,
+    #7A2238,
+    #9E3A52
     );
 }
 
@@ -237,7 +239,7 @@ body{
 
     border-radius:50%;
 
-    background:rgba(255,255,255,.2);
+    background:rgba(255,255,255,.08);
 
     filter:blur(80px);
 
@@ -259,7 +261,7 @@ body{
 
     border-radius:999px;
 
-    background:rgba(255,255,255,.3);
+    background:rgba(255,255,255,.15);
 
     backdrop-filter:blur(10px);
 
@@ -280,7 +282,7 @@ body{
 }
 
 .hero h1 span{
-    color:#ffedf7;
+    color:#F8DDE6;
 }
 
 .hero p{
@@ -310,14 +312,18 @@ body{
 
     background:white;
 
-    color:#5c8cff;
+    color:#7A2238;
 
     transition:.3s;
 }
 
 #openBookBtn:hover{
+
     transform:translateY(-4px);
-  }
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+}
 
 /* =========================
    SCRAPBOOK MAIN
@@ -325,11 +331,12 @@ body{
 
 #scrapbook{
     padding:80px 20px;
+
     background:
     linear-gradient(
     180deg,
-    #f8f9ff,
-    #fff5fb
+    #F8F3F4,
+    #FFFDFD
     );
 }
 
@@ -342,7 +349,9 @@ body{
     text-align:center;
     font-size:2rem;
     margin-bottom:40px;
-    color:#4d6eff;
+
+    color:#7A2238;
+
     font-family:'Caveat',cursive;
 }
 
@@ -368,10 +377,10 @@ body{
 
     border-radius:25px;
 
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.08);
-
     position:relative;
+
+    box-shadow:
+    0 15px 35px rgba(92,29,46,.08);
 }
 
 .paper-card::before{
@@ -383,12 +392,14 @@ body{
     width:80px;
     height:25px;
 
-    background:#ffd7ec;
+    background:#D9A5B3;
 
     top:-10px;
     left:50%;
 
-    transform:translateX(-50%) rotate(-3deg);
+    transform:
+    translateX(-50%)
+    rotate(-3deg);
 
     opacity:.9;
 }
@@ -399,7 +410,7 @@ body{
 
     font-size:2.5rem;
 
-    color:#4d6eff;
+    color:#7A2238;
 
     margin-bottom:10px;
 }
@@ -420,11 +431,11 @@ body{
     border-radius:25px;
 
     box-shadow:
-    0 15px 35px rgba(0,0,0,.15);
+    0 15px 35px rgba(92,29,46,.15);
 }
 
 /* =========================
-   POLAROID SECTION
+   POLAROID
 ========================= */
 
 .polaroid-grid{
@@ -453,7 +464,7 @@ body{
     transition:.35s;
 
     box-shadow:
-    0 15px 30px rgba(0,0,0,.12);
+    0 15px 30px rgba(92,29,46,.12);
 }
 
 .polaroid:hover{
@@ -488,7 +499,7 @@ body{
 
     font-size:1.5rem;
 
-    color:#555;
+    color:#5C1D2E;
 }
 
 .rotate-left{
@@ -521,11 +532,11 @@ body{
 }
 
 .tape.blue{
-    background:#9fd8ff;
+    background:#9E3A52;
 }
 
 .tape.pink{
-    background:#ffc8e6;
+    background:#C76B84;
 }
 
 /* =========================
@@ -552,8 +563,8 @@ body{
     background:
     linear-gradient(
     135deg,
-    #89CFF0,
-    #FFC1E3
+    #7A2238,
+    #C76B84
     );
 
     display:flex;
@@ -567,7 +578,7 @@ body{
     cursor:pointer;
 
     box-shadow:
-    0 15px 35px rgba(0,0,0,.12);
+    0 15px 35px rgba(92,29,46,.12);
 
     transition:.3s;
 }
@@ -595,14 +606,14 @@ body{
     line-height:2;
 
     box-shadow:
-    0 15px 35px rgba(0,0,0,.08);
+    0 15px 35px rgba(92,29,46,.08);
 }
 
 .letter-paper h3{
 
     margin-bottom:15px;
 
-    color:#4d6eff;
+    color:#7A2238;
 
     font-family:'Caveat',cursive;
 
@@ -613,6 +624,7 @@ body{
     display:block;
     margin-top:15px;
     font-weight:600;
+    color:#5C1D2E;
 }
 
 /* =========================
@@ -640,11 +652,15 @@ body{
     height:6px;
 }
 
+.film-roll::-webkit-scrollbar-thumb{
+    background:#9E3A52;
+}
+
 .film-frame{
 
     min-width:260px;
 
-    background:black;
+    background:#2A0E17;
 
     padding:12px;
 
@@ -671,7 +687,7 @@ body{
     color:#777;
 
     font-style:italic;
-}
+   }
 
 /* =========================
    QUIZ SECTION
@@ -680,10 +696,15 @@ body{
 .quiz-box{
     max-width:650px;
     margin:auto;
+
     background:white;
+
     padding:35px;
+
     border-radius:25px;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    box-shadow:
+    0 15px 35px rgba(92,29,46,.08);
 }
 
 .question{
@@ -693,32 +714,47 @@ body{
 .question p{
     margin-bottom:10px;
     font-weight:500;
+    color:#5C1D2E;
 }
 
 .question input{
+
     width:100%;
+
     padding:15px;
+
     border:none;
-    border-radius:15px;
-    background:#f3f6ff;
+
     outline:none;
+
+    border-radius:15px;
+
+    background:#F7F0F2;
 }
 
 #checkQuiz{
+
     width:100%;
+
     margin-top:10px;
+
     padding:15px;
+
     border:none;
+
     border-radius:15px;
+
     cursor:pointer;
-    color:white;
+
     font-weight:600;
+
+    color:white;
 
     background:
     linear-gradient(
     135deg,
-    #89CFF0,
-    #FFC1E3
+    #7A2238,
+    #C76B84
     );
 }
 
@@ -747,13 +783,21 @@ body{
 }
 
 .blur-photo img{
+
     width:100%;
+
     aspect-ratio:3/4;
+
     object-fit:cover;
+
     border-radius:25px;
+
     filter:blur(15px);
+
     transition:1s;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    box-shadow:
+    0 15px 35px rgba(92,29,46,.15);
 }
 
 .blur-photo img.show{
@@ -761,19 +805,26 @@ body{
 }
 
 #revealBtn{
+
     margin-top:25px;
+
     padding:14px 25px;
+
     border:none;
+
     border-radius:15px;
+
     cursor:pointer;
+
     color:white;
+
     font-weight:600;
 
     background:
     linear-gradient(
     135deg,
-    #89CFF0,
-    #FFC1E3
+    #7A2238,
+    #C76B84
     );
 }
 
@@ -782,9 +833,13 @@ body{
 ========================= */
 
 .counter-card{
+
     display:flex;
+
     justify-content:center;
+
     flex-wrap:wrap;
+
     gap:20px;
 }
 
@@ -800,14 +855,15 @@ body{
 
     text-align:center;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    box-shadow:
+    0 15px 35px rgba(92,29,46,.08);
 }
 
 .counter-item h3{
 
     font-size:2.5rem;
 
-    color:#5b7cff;
+    color:#7A2238;
 
     margin-bottom:10px;
 }
@@ -834,7 +890,8 @@ body{
 
     text-align:center;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    box-shadow:
+    0 15px 35px rgba(92,29,46,.08);
 }
 
 .final-card img{
@@ -852,7 +909,7 @@ body{
 
     margin-top:20px;
 
-    color:#4d6eff;
+    color:#7A2238;
 
     font-family:'Caveat',cursive;
 
@@ -860,8 +917,11 @@ body{
 }
 
 .final-card p{
+
     margin-top:10px;
+
     color:#666;
+
     line-height:1.8;
 }
 
@@ -911,7 +971,8 @@ body{
 
     border-radius:25px;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    box-shadow:
+    0 15px 35px rgba(92,29,46,.08);
 }
 
 #secretMessage p{
@@ -919,6 +980,8 @@ body{
     font-size:1.1rem;
 
     line-height:2;
+
+    color:#5C1D2E;
 }
 
 #secretMessage h3{
@@ -947,13 +1010,15 @@ body{
     background:
     linear-gradient(
     135deg,
-    #89CFF0,
-    #FFC1E3
+    #5C1D2E,
+    #7A2238,
+    #C76B84
     );
 
     color:white;
 
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
+    box-shadow:
+    0 20px 40px rgba(92,29,46,.15);
 }
 
 .ending-card h2{
@@ -982,7 +1047,7 @@ body{
 
     background:white;
 
-    color:#5b7cff;
+    color:#7A2238;
 
     cursor:pointer;
 
